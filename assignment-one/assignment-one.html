@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sidebar</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<a href="javascript:void(0)" class="hamburger_icon">
+		<span>&#9776;</span>
+	</a>
+
+	<nav>
+		<a href="javascript:void(0)" class="icon_close">&times;</a>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Generic</a></li>
+				<li><a href="#">Elements</a></li>
+			</ul>
+		</div>
+	</nav>
+	<script type="text/javascript" src='js/jquery-1.12.0.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".hamburger_icon").click(function(){
+				$("nav").addClass('visible');
+			});
+			$(".icon_close").click(function(){
+				$("nav").removeClass('visible');
+			});
+		});
+	</script>
+</body>
+</html>
